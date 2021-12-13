@@ -207,4 +207,4 @@ def get_all_product_of_category() -> LIST_OF_DICT:
 final_data = get_all_product_of_category()
 # Change to Dataframe and save as csv file
 data = pd.DataFrame(final_data)
-data.to_csv("data.csv")
+data.to_csv("DigiKala  " + str(jdatetime.date.fromgregorian(date=date.today())) + ".csv")
